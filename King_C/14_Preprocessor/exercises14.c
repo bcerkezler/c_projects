@@ -1,35 +1,35 @@
-/* Example 1 */
+/* Exercise 1 */
 
 // #define CUBE(x) ((x)*(x)*(x))
 // #define MOD4(n) ((n) % 4)
 // #define PRODUCT_LESS_THAN_100(x, y) (((x)*(y)) < 100 ? 1 : 0)
 
-/* Example 2 */
+/* Exercise 2 */
 
 // #define NELEMS(a) (sizeof(a) / sizeof(a[0]))
 
-/* Example 3 */
+/* Exercise 3 */
 
 // (a) : 4
 // (b) : 4
 // (c) : #define DOUBLE(x) (2 * (x))
 
-/* Example 4 */
+/* Exercise 4 */
 
 // (a) : #define AVG(x,y) (((x)-(y))/2)
 // (b) : #define AREA(x,y) ((x)*(y))
 
-/* Example 5 */
+/* Exercise 5 */
 
 // (a) : D
 // (b) : '3'
 
-/* Example 6 */
+/* Exercise 6 */
 
 // (a) #define DISP(f,x) printf((#f) "(%g) = %g\n", (x), (f((x))));
 // (b) #define DISP(f,x,y) printf((#f) "(%g, %g) = %g\n", (x), (y), (f((x), (y))));
 
-/* Example 7 */
+/* Exercise 7 */
 
 // (a) long long_max(long x, long y) 
 //    {
@@ -45,13 +45,13 @@
 // an equivalent type which has no spaces in its name, such as :
 // typedef unsigned long u_long;
 
-/* Example 8 */
+/* Exercise 8 */
 
 // #define STRINGIZE(x) #x
 // #define EXPAND_MACRO(x) STRINGIZE(x)
 // #define LINE_FILE ("Line " EXPAND_MACRO(__LINE__) " of file " __FILE__)
 
-/* Example 9 */
+/* Exercise 9 */
 
 // #define CHECK(x,y,n) (((x)>=0&&(x)<=(n)-1&&(y)>=0&&(y)<=(n)-1)?1:0)
 // #define MEDIAN(x,y,z) (((x)>=(y)&&(x)<=(z))?(x):((y)>=(x)&&(y)<=(z))?(y):(z))
@@ -62,21 +62,21 @@
                        + (7*(x))                 \
                        - 6)
 
-/* Example 10 */
+/* Exercise 10 */
 
 // Recursive functions and functions with arguments 
 // which have side effects have different behaviour as a macro, 
 // making a function more suitable.
 
-/* Example 11 */
+/* Exercise 11 */
 
 // #define ERROR(s,...) (fprintf(stderr, (s), __VA_ARGS__))
 
-/* Example 12 */
+/* Exercise 12 */
 
 // (c) and (e) will fail their tests, as M is defined.
 
-/* Example 13 */
+/* Exercise 13 */
 
 // (a) void f(void);
 
@@ -100,7 +100,7 @@
 
 // (b) N is undefined
 
-/* Example 14 */
+/* Exercise 14 */
 
 // int main(void)
 // {
@@ -127,7 +127,7 @@
 //    return 0;
 // } 
 
-/* Example 15 */
+/* Exercise 15 */
 
 // #if defined(FRENCH)
 // #define INSERT_DISK "Inserez Le Disque 1"
@@ -139,6 +139,6 @@
 // #define INSERT_DISK "Insert Disk 1"
 // printf("%s\n", INSERT_DISK);
 
-/* Example 16 */
+/* Exercise 16 */
 
 // #pragma ident "foo"

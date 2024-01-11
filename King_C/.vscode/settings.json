@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "_mingw.h": "c",
+        "w32api.h": "c",
+        "sdkddkver.h": "c"
+    }
+}

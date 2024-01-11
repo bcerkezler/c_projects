@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+int main() {
+	
+	int dizi[10],i,sum = 0;
+	
+	printf("Dizinin elemanlarini giriniz: \n");
+	for (i = 0; i < 10; i++) {
+		printf("dizi[%d]: ",i);
+		scanf("%d",&dizi[i]);
+	}
+	
+	for (i = 0; i < 10; i++) {
+		sum = sum + dizi[i];
+	}
+	
+	printf("\nElemanlarin toplami : %d",sum);
+	
+	
+	
+	
+	return 0;
+}

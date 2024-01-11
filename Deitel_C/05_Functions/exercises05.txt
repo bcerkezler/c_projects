@@ -1,0 +1,77 @@
+// Exercises Ch5
+
+5.1 | a) functions
+    | b) function call
+    | c) local variable
+    | d) return
+    | e) void
+    | f) scope
+    | g) return; or return expression; or encountering the closing right brace of a function
+    | h) function prototype
+    | i) rand
+    | j) srand
+    | k) auto, static, extern, register
+    | l) auto
+    | m) global
+    | n) static
+    | o) function, file, block, function prototype
+    | p) recursive
+    | q) base
+
+5.2 | a) block scope
+    | b) block scope
+    | c) file scope
+    | d) file scope
+    | e) file scope
+    | f) function-prototype scope
+
+5.4 | a) double hypotenuse(double side1, double side2)
+    | b) int smallest(int x, int y, int z)
+    | c) void instructions(void)
+    | d) float intToFloat(int number)
+
+5.5 | a) double hypotenuse(double,double);
+    | b) int smallest(int,int,int);
+    | c) void instructions(void);
+    | d) float intToFloat(int);
+
+5.6 | static float lastValue;
+
+5.7 | a) Error: Nested functions are not supported in C.
+    |    Correction: Define function h outside of the function g.
+    | b) Error: Function doesn't return an integer.
+    |    Correction: Replace the function body with "return x + y;". 
+    | c) Error: Semicolon after parameter list, redefining the parameter a in func. body. 
+    |    Correction: Delete that semicolon and the statement "float a;".
+    | d) Error: No return statement in recursive step.
+    |    Correction: Change that line with "return n + sum(n-1);"
+    | e) Error: Return type is void but it returns an integer.
+    |    Correction: Delete the statement "return result;".
+
+5.8 | a) 7.5
+    | b) 7.0
+    | c) 0.0
+    | d) 0.0
+    | e) 6.4
+    | f) -6.0
+    | g) -14.0
+
+5.12 | a) Every number has an equal chance of being chosen at any time.
+     | b) Because it produces a sequence of pseudo random numbers that when scaled appear to be random.
+     | c) Using srand enables the sequence of pseudo random numbers produced by rand to change each time the program is executed. 
+     |    The program should not be randomized while in the debugging stages because repetition is helpful in debugging.
+     | d) To produce random values in a specific range.
+
+5.13 | a) n = rand() % 2 + 1;
+     | b) n = rand() % 100 + 1;
+     | c) n = rand() % 10;
+     | d) n = rand() % 112 + 1000;
+     | e) n = rand() % 3 - 1;
+     | f) n = rand() % 15 - 3;
+
+5.14 | a) printf("%d", (rand() % 5 + 1) * 2);
+     | b) printf("%d", ((rand() % 5 + 1) * 2) + 1);
+     | c) printf("%d", ((rand() % 5 + 1) * 2) * 2 + 2);
+
+
+    

@@ -1,0 +1,133 @@
+// Exercises Ch3 1-15
+
+3.1 | a)algorithm  b)program control  c)sequence,selection,iteration   
+    | d)if...else  e)block  f)while
+    | g)definite    h)sentinel
+
+3.2 | a) x = x + 1;
+    | b) x += 1;
+    | c) x++;
+    | d) ++x;
+
+3.3 | a) product *= 2;
+    | b) product = product * 2;
+    | c) if (count > 10) { puts("Count is greater than 10."); }
+    | d) quotient %= divisor;  quotient = quotient % divisor;
+    | e) printf("%.2f", 123.4567); // prints 123.46
+    | f) printf("%.3f", 3.14159);  // prints 3.142
+
+3.4 | a) int x = 1;
+    | b) int sum = 0;
+    | c) sum += x;
+    | d) printf("The sum is: %d", sum);
+ 
+3.5 |  #include <stdio.h>
+    |
+    |  int main(void) { 
+    |     int x = 1;
+    |     int sum = 0
+    |     
+    |     while (x <= 10) {
+    |       sum += x;
+    |       x++;  
+    |     }
+    |     
+    |     printf("The sum is: %d", sum);
+    |  }
+
+3.6 | a) scanf("%d", &x);
+    | b) scanf("%d", &y);
+    | c) i = 1;
+    | d) power = 1;
+    | e) power *= x;
+    | f) i++;
+    | g) while (i <= y)
+    | h) printf("%d", power);
+
+3.7 | #include <stdio.h>
+    | int main(void) { 
+    |   int x, y, i = 1, power = 1;
+    |   scanf("%d", &x);
+    |   scanf("%d", &y);
+    |
+    |   while (i <= y) {
+    |       power *= x;
+    |       i++;
+    |   }
+    |   printf("%d", power);  
+    | }
+
+3.8 | a) while (c <= 5) {
+    |       product *= c;
+    |       ++c;
+    |    }  
+    | b) scanf("%f", &value);  
+    | c) if (gender == 1) {
+    |       puts("Woman");
+    |    }
+    |    else {
+    |       puts("Man");
+    |    }
+
+3.9 | While loop becomes an infinite loop. 
+    | Need to decrement z in loop body.
+
+3.10 | a) Remove semicolon after if condition.
+     | b) Should initialize total to 0;
+     | c) Put while body into brackets.
+     | d) Infinite loop. Change while condition.
+
+3.11 | a) order
+     | b) algorithm
+     | c) total
+     | d) sentinel, flag, signal, dummy
+     | e) flowchart
+     | f) arrow (flowline)
+     | g) assignment, printf, scanf
+     | h) condition
+
+3.12 |1
+     |4
+     |9 
+     |16
+     |25
+     |36
+     |49
+     |64
+     |81
+     |100
+     |385
+
+3.13 | a) print "enter two numbers"
+     | b) p = x + y + z
+     | c) if m is greater than twice v
+              do this...
+          else
+              do this...  
+     | d) input s, input r, input t   
+
+3.14 | a) Input the first number
+     |    Input the second number
+     |    Add the two numbers
+     |    Output the sum
+
+     | b) Input the first number
+     |    Input the second number
+     |    If the first number is greater than the second number
+     |        print it
+     |    Else if the second number is greater than the first number
+     |        print it
+     |    Else
+     |        print a message stating that the numbers are equal    
+     
+     | c) Input the value
+     |    While the input value is not equal to -1
+     |        add the number to the running total
+     |        input the next number
+     |    Print the sum
+
+3.15 | a)false {The algorithm is the hardest part.}  
+     | b)true  
+     | c)false {Flowlines indicate order of actions.}
+     | d)false {Conditional operators.}
+     | e)true

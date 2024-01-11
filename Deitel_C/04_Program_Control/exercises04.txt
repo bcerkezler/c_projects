@@ -1,0 +1,85 @@
+// Exercises Ch4 
+
+4.1 | a)counter b)continue c)break d)switch statement
+
+4.2 | a)false {It is not required.}
+    | b)false {It is not required.}
+    | c)false {Both needs to be true.}
+    | d)true
+
+4.3 | a) for (int count = 1; count <= 99; i += 2) {
+    |        sum += count;
+    |    }
+    |
+    | b) printf("%-15.1f", 333.546372); : 333.5
+    |    printf("%-15.2f", 333.546372); : 333.55
+    |    printf("%-15.3f", 333.546372); : 333.546
+    |    printf("%-15.4f", 333.546372); : 333.5464
+    |    printf("%-15.5f", 333.546372); : 333.54637
+    |
+    | c) printf("%10.2f", pow(2.5,3));
+    |
+    | d) int x = 1; 
+    |    while (x <= 20) {
+    |       printf("%d ", x);
+    |       if (x % 5 == 0) 
+    |           puts("");
+    |       x++;
+    |    }
+    |
+    | e) for (int x = 1; x <= 20; x++) {
+    |       printf("%d ", x);
+    |       if (x % 5 == 0) 
+    |           puts("");
+    |    }
+
+4.4 | a) Semicolon after while statement. Put a brace.
+    | b) Floating point counter variable. Should be integer.
+    | c) No break statement in case 1. Put it.
+    | d) While condition is wrong. Should be n <= 10.
+
+4.5 | a) for keyword is wrong. ++x should be --x.
+    | b) switch condition is wrong. No breaks in cases.
+    | c) getchar gets " " character.
+    | d) Floating point counter.
+    | e) x += 2 should be x -= 2.
+    | f) do...while keyword should be lowercase.
+    | g) Semicolon after for statement is wrong.
+
+4.6 | a) 2,4,6,8,10,12
+    | b) 5,12,19
+    | c) 3,6,9,12,15
+    | d) 1
+    | e) 12,9,6,3
+
+4.7 | a) for (int x = 1; x <= 7; x++) { printf("%d\n", x); }
+    | b) for (int x = 3; x <= 23; x += 5) { printf("%d\n", x); }
+    | c) for (int x = 20; x >= -10; x -= 6) { printf("%d\n", x); }
+    | d) for (int x = 19; x <= 51; x += 8) { printf("%d\n", x); }
+
+4.8 | x*y times prints "@". 
+
+4.20 | 0 1
+     | 1 1
+     | 0
+
+4.24 | a) 1
+     | b) 0
+     | c) 1
+     | d) 0
+     | e) 1
+     | f) 0
+     | g) 0
+     | h) 1
+     | i) 0
+     | j) 1
+
+4.34 | The body of a do...while loop becomes the body of a while loop, 
+     | and the contents of the body are repeated before the while loop. 
+     | In a do...while loop, the body is executed at least once, 
+     | whereas execution of the body in a while loop depends on 
+     | the continuation condition.
+     | Replacing a while loop with a do...while loop requires an if selection statement. 
+     | The do...while loop would be the body of the if statement 
+     | and the condition would be the same as the 
+     | loop continuation condition in the do...while.

@@ -1,0 +1,87 @@
+// Exercises Ch2  1-15
+
+2.1 | a)main  b){ and }  c);   d)printf()  e)newline  f)scanf()
+    | g)%d    h)destructive  i)nondestructive j)if
+
+2.2 | a)false {unless \n added it starts where previous printf ended.}
+    | b)false {doesn't display text.}
+    | c)true
+    | d)true
+    | e)true
+    | f)false {they are different.C is case sensitive.}
+    | g)true
+    | h)false {% not &.}
+    | i)true
+    | j)false {*,/,% same and greater than +,-.}
+    | k)false {can be done with one printf using \n.}
+
+2.3 | a) int number = 0;
+    | b) printf("Enter an integer: ");
+    | c) scanf("%d", &a);
+    | d) if (number != 7) { printf("number is not equal to 7"); }
+    | e) printf("This is a C program.");
+    | f) printf("This is a C\nprogram.");
+    | g) printf("This\nis\na\nC\nprogram.");
+    | h) printf("This\tis\ta\tC\tprogram.");
+
+2.4 | a) // This program will calculate the product of three integers.
+    | b) puts("Enter three integers: ");
+    | c) int x = 0;
+    | d) int y = 0
+    | e) int z = 0;
+    | f) scanf("%d %d %d", &x, &y, &z);
+    | g) int result = x * y * z;
+    | h) printf("The product is %d.", result);
+
+2.5 |  // This program will calculate the product of three integers.
+    |  #include <stdio.h>
+    |
+    |  int main(void) { 
+    |     puts("Enter three integers: ");
+    |     int x = 0;
+    |     int y = 0
+    |     int z = 0;
+    |     scanf("%d %d %d", &x, &y, &z);
+    |     int result = x * y * z;
+    |     printf("The product is %d.", result);
+    |  }
+
+2.6 | a) printf("The value is %d\n", number);
+    | b) scanf("%d %d", &number1, &number2);
+    | c) if (c < 7) { puts("C is less than 7"); }
+    | d) if (c >= 7) { puts("C is greater than or equal to 7"); }
+
+2.7 | a) scanf("%d", &value);
+    | b) printf("The product of %d and %d is %d\n", x, y, z);
+    | c) sumOfNumbers = firstNumber + secondNumber;
+    | d) if (number >= largest) { largest = number; }
+    | e) /* Program to determine the largest of three integers */
+    | f) scanf("%d", &anInteger);
+    | g) printf("Remainder of %d divided by %d is %d\n", x, y, x % y);
+    | h) if (x == y) { printf("%d is equal to %d\n", x, y); }
+    | i) printf("The sum is %d\n", x + y);
+    | j) printf("The value you entered is: %d\n", value);
+
+2.8 | a)comments  b)printf  c)if statement d)assignment  e)scanf
+
+2.9 | a) puts("Enter two numbers.");
+    | b) a = b * c;
+    | c) // Performs a sample payroll calculation.
+    | d) scanf("%d%d%d", &a,&b,&c);
+
+2.10 | a)false {some evaluate right-to-left.}
+     | b)true
+     | c)false {the statement is an output.}
+     | d)true
+     | f)false {h22 is valid.}
+
+2.11 | a)division and remainder  b)inner most  c)variable
+
+2.12 | a)2  b)4  c)x=  d)x=2  e)5 = 5  f)Nothing  g)Nothing  
+     | h)Nothing  i)Nothing
+
+2.13 | b
+
+2.14 | a, d and e
+
+2.15 | a)15  b)3  c)324

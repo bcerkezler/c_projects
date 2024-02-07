@@ -1,0 +1,55 @@
+//Exercises Ch 12
+
+12.1 | a) referencing
+     | b) malloc()
+     | c) stack
+     | d) predicate functions
+     | e) FIFO
+     | f) link
+     | g) free()
+     | h) queue
+     | i) tree
+     | j) LIFO
+     | k) binary
+     | l) root
+     | m) child, subtree
+     | n) leaf
+     | o) inorder, preorder, postorder
+
+12.2 | You can insert and delete items wherever you want in a linked list. 
+     | But the stack is a LIFO data structure. You can only insert to or delete
+     | from the top of the stack.
+
+12.3 | The stack is a LIFO data structure, the queue is a FIFO one. 
+     | You insert to and delete from the top in the stack, however
+     | you insert to the tail and delete from the head in the queue.     
+
+12.4 | a) GradeNodePtr startPtr = NULL;
+     | b) GradeNodePtr newPtr = malloc(sizeof(GradeNode));
+     |    strcpy(newPtr->lastName, "Jones");
+     |    newPtr->grade = 91.5;
+     | c) To insert "Adams":
+     |    previousPtr is NULL, currentPtr points to the first element in the list.
+     |    newPtr->nextPtr = currentPtr;
+     |    startPtr = newPtr;
+     |    To insert "Thompson":
+     |    previousPtr is "Smith", currentPtr is NULL.
+     |    previousPtr->nextPtr = newPtr;
+     |    newPtr->next = currentPtr;
+     |    To insert "Pritchard":
+     |    previousPtr points to "Jones", currentPtr points to "Smith".
+     |    newPtr->nextPtr = currentPtr;
+     |    previousPtr->nextPtr = newPtr;
+     | d) while (currentPtr != NULL) {
+     |       printf("""%-9s""  %5.f\n", currentPtr->lastName, currentPtr->grade);
+     |       currentPtr = currentPtr->nextPtr;   
+     |    }
+     | e) while (currentPtr != NULL) {
+     |       tempPtr = currentPtr;
+     |       currentPtr = currentPtr->nextPtr;  
+     |       free(tempPtr); 
+     |    }               
+
+12.5 | (inorder) 11 18 19 28 32 40 44 49 69 71 72 83 92 97 99
+     | (preorder) 49 28 18 11 19 40 32 44 83 71 69 72 97 92 99
+     | (postorder) 11 19 18 32 44 40 28 69 72 71 92 99 97 83 49

@@ -1,0 +1,34 @@
+//Exercises Ch 14
+
+14.1 | a) #
+     | b) #elif, #else
+     | c) #define
+     | d) whitespace
+     | e) #undef
+     | f) #ifdef, #ifndef
+     | g) conditional compilation
+     | h) assert
+     | i) #include
+     | j) ##
+     | k) #
+     | l) \
+     | m) #line
+
+14.3 | a) #define YES 1
+     | b) #define NO 0
+     | c) #include "common.h"
+     | d) #line 3000
+     | e) #if defined(TRUE)
+     |      #undef TRUE
+     |      #define TRUE 1
+     |    #endif
+     | f) #ifdef TRUE
+     |      #undef TRUE
+     |      #define TRUE 1
+     |    #endif
+     | g) #if TRUE
+     |      #define FALSE 0
+     |    #else
+     |      #define FALSE 1
+     |    #endif
+     | h) #define CUBE_VOLUME(x) ((x) * (x) * (x))

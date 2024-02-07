@@ -1,0 +1,94 @@
+//Exercises Ch 10
+
+10.1 | a) structure
+     | b) union
+     | c) &
+     | d) fields (members)
+     | e) |
+     | f) struct
+     | g) typedef
+     | h) ^
+     | i) mask
+     | j) union
+     | k) tag
+     | l) . (dot), -> (arrow)
+     | m) << , >>
+     | n) enumeration
+
+10.2 | a) False. They can contain variables of multiple data types.
+     | b) False.
+     | c) True.
+     | d) False. They can have the same name.
+     | e) False. It gives new name to previously declared data types.
+     | f) False. You can pass it by value too.
+     | g) True.
+
+10.3 | a) struct part {
+     |       unsigned int partNumber;   
+     |       char partName[25];
+     |    }
+     | b) typedef struct part Part;
+     | c) Part a;
+     |    Part b[10];
+     |    Part *ptr;
+     | d) scanf("%u%s", &a.partNumber, a.partName);
+     | e) b[3] = a;     
+     | f) ptr = b;
+     | g) printf("part number = %u\npart name = %s", (ptr+3)->partNumber, (ptr+3)->partName);
+
+10.4 | a) Error: *cPtr->face is wrong.
+     |    Correction: Should use either cPtr->face or *(cPtr).face
+     | b) Error: hearts.face cannot access to  array element 10.
+     |    Correction: Should use hearts[10].face instead;
+     | c) Error: You can only initialize an union with its first field. 
+     |    Correction: union values v = {'a'};
+     | d) Error: struct definition doesn't add with a semicolon(;).
+     |    Correction: struct person {...};
+     | e) Error: No keyword struct is used.
+     |    Correction: struct person d;
+     | f) Error: You can't assign different struct types to one another.
+     |    Correction: Assign it with a same type;
+
+10.5 | a) struct inventory {
+     |       char partName[30];
+     |       int partNumber;
+     |       float price;
+     |       int stock;
+     |       int reorder;   
+     |    }
+     | b) union data {
+     |       char c;
+     |       short s;
+     |       long b;
+     |       float f;
+     |       double d;   
+     |    }
+     | c) struct address {
+     |       char streetAddress[25];
+     |       char city[20];
+     |       char state[3];
+     |       char zipCode[6];   
+     |    }
+     | d) struct student {
+     |       char firstName[15];
+     |       char lastName[15];
+     |       struct address homeAddress;   
+     |    }
+     | e) struct test {
+     |       unsigned int a : 1;
+     |       unsigned int b : 1;
+     |       unsigned int c : 1;
+     |       unsigned int d : 1;
+     |       unsigned int e : 1;   
+     |       unsigned int f : 1;   
+     |       unsigned int g : 1;   
+     |       unsigned int h : 1;   
+     |       unsigned int j : 1;   
+     |       unsigned int i : 1;   
+     |       unsigned int k : 1;   
+     |       unsigned int l : 1;   
+     |       unsigned int m : 1;   
+     |       unsigned int n : 1;   
+     |       unsigned int o : 1;   
+     |       unsigned int p : 1;   
+     |    }

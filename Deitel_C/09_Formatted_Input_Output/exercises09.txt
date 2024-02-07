@@ -1,0 +1,71 @@
+// Exercises Ch 9
+
+9.1 | a) streams
+    | b) stdin
+    | c) stdout
+    | d) printf()
+    | e) conversion specifiers, flags, field widths, precisions, literal characters
+    | f) %d, %i
+    | g) %o, %u, %x
+    | h) %h, %l
+    | i) %e
+    | j) %lf
+    | k) 6
+    | l) %s, %c
+    | m) '\0'
+    | n) asterisk
+    | o) -
+    | p) +
+    | q) scanf()
+    | r) scan set
+x   | s) 
+    | t) %lf, %le, %lg
+    | u) *
+    | v) field width
+
+9.2 | a) Error: %s is used instead of %c.
+    |    Correction: printf("%c\n", 'c');
+    | b) Error: %% is needed for printing %.
+    |    Correction: printf("%.3f%%", 9.375);
+    | c) Error: %c is used instead of %s. 
+    |    Correction: printf("%s\n", "Monday");
+    | d) Error: Can't use double quotes like that inside string literals.
+    |    Correction: puts("""A string in quotes""");
+    | e) Error: No format string in printf.
+    |    Correction: printf("%d%d", 12, 20);
+    | f) Error: Using %c for printing a string.
+    |    Correction: printf("%s", "x"); 
+    | g) Error: String literals should be in double quotes. 
+    |    Correction: printf("%s\n", "Richard");
+
+9.3 | a) printf("%10d", 1234);
+    | b) printf("%+.3e", 123.456789);
+    | c) scanf("%lf", &number);
+    | d) printf("%#o", 100);
+    | e) scanf("%s", string);
+    | f) scanf("%[0123456789]", n);
+    | g) printf("%*.*lf", x, y, 87.4573);
+x   | h) scanf("%f%", &percent); 
+x   | i) printf("%+20..3llf", 3.333333);
+
+9.4 | a) printf("%15.8u", 40000);
+    | b) scanf("%x", &hex);
+    | c) printf("%+d %d", 200, 200);
+    | d) printf("%#x", 100);
+    | e) printf("%[^p]", s);
+    | f) printf("%09f", 1.234);
+    | g) scanf("%d*%d*%d", &hour, &minute, &second);
+    | h) scanf(""%s"", s);
+    | i) scanf("%d:%d:%d", &hour, &minute, &second);
+
+9.5 | a) 10000
+    | b) Trying to display a string with %c. 
+    | c) 1024.988
+    | d) 021 
+    |    0X11 
+    |    1.008837e+003
+    | e)  1000000  
+    |    +1000000
+    | f) 4.45E+002
+    | g) 4.4e+002
+    | h) Trying to display a floating-point number with %d.

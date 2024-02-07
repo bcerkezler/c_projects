@@ -1,0 +1,47 @@
+//Exercises Ch 11
+
+11.1 | a) fclose()
+     | b) fscanf()
+     | c) fgetc()
+     | d) fgets()
+     | e) fopen()
+     | f) fread()
+     | g) fseek()
+
+11.2 | a) False. Use stdin for input stream argument.
+     | b) False. Other functions can open and access it without fopen.
+     | c) False. When program execution ends, files close automatically.
+     | d) False. You can use the rewind() function.
+     | e) True
+     | f) True
+     | g) True.
+     | h) False. They are of uniform length.
+     | i) False. SEEK_END and SEEK_CUR exists too.
+
+11.3 | a) ofPtr = fopen("oldmast.dat", "r");
+     | b) tfPtr = fopen("trans.dat", "r");
+     | c) nfPtr = fopen("newmast.dat", "w");
+     | d) fscanf(ofPtr, "%d%s%f", &account, name, &currentBalance);
+     | e) fscanf(tfPtr, "%d%f", &account, &dollarAmount);
+     | f) fprintf(nfPtr, "%d %s %.2f", account, name, currentBalance);
+
+11.4 | a) Error: You first need to open a file in order to write in it.
+     |    Correction: Open the file. Also use fprintf.
+     | b) Error: The function name is fopen not open.
+     |    Correction: fopen(...);
+     | c) Error: You use the wrong file's pointer. 
+     |    Correction: Use payPtr instead pf recPtr in the scanf. Also use fscanf;
+     | d) Error: Don't use the open mode "w". It discards the data.
+     |    Correction: Use "a" or "r+" instead;
+     | e) Error: "w+" discards the data.
+     |    Correction: Use open mode "a" instead;
+
+11.5 | a) files
+     | b) FILE structure
+     | c) 
+     | d) text
+     | e) stdin, stdout, stderr
+     | f) fputc()
+     | g) fputs()
+     | h) fwrite()
+     | i) rewind()

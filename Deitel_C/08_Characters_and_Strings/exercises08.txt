@@ -1,0 +1,40 @@
+// Exercises Ch 8
+
+8.1 | a) c = toupper(c);
+    | b) printf("c %s digit.", isdigit(c) ? "is a" : "is not a");
+    | c) printf("c %s control character.", isctrl(c) ? "is a" : "is not a");
+    | d) fgets(s1, 100, stdin);
+    | e) puts(s1);
+    | f) ptr = strrchr(s1, c);
+    | g) putchar(c);
+    | h) printf("c %s letter.", isalpha(c) ? "is a" : "is not a");
+    | i) c = getchar();
+    | j) ptr = strstr(s1, s2);
+    | k) printf("c %s printing character.", isprint(c) ? "is a" : "is not a");
+    | l) sscanf("1.27 10.3 9.432", "%f%f%f", &d, &e, &f);
+    | m) strcpy(s1, s2);
+    | n) ptr = strpbrk(s1, s2);
+    | o) printf("%d", strcmp(s1, s2));
+    | p) ptr = strchr(s1, c);
+    | q) sprintf(s1, "%7d%7d%7d", x, y, z);
+    | r) strncat(s1, s2, 10);
+    | s) printf("Length is %d", strlen(s1));
+    | t) ptr = strtok(s2, ",");
+
+8.2 | char vowel[] = "AEIOU";
+    | char vowel[] = {'A', 'E', 'I', 'O', 'U', '\O'};
+
+8.3 | a) Jack
+    | b) jill
+    | c) jack and jill 
+    | d) 8
+    | e) 13
+
+8.4 | a) Error: strncpy doesn't copy the null terminator.
+    |    Correction: strncpy(s, "hello", 6);
+    | b) Error: 'a' is a char literal not a string one.
+    |    Correction: printf("%c", 'a'); 
+    | c) Error: Array length doesn't include null terminator. 
+    |    Correction: char s[13] = "";
+    | d) Error: if statement will execute falsely.
+    |    Correction: if (strcmp(string1, string2) == 0)

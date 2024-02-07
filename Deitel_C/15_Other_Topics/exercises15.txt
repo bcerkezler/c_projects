@@ -1,0 +1,15 @@
+// Exercises Ch 15
+
+12.1 | a) ellipsis (...)
+     | b) va_start
+     | c) va_arg
+     | d) va_end
+     | e) argc
+     | f) argv
+     | g) exit
+     | h) atexit
+     | i) suffix
+     | j) signal
+     | k) raise
+     | l) calloc
+     | m) realloc

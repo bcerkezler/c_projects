@@ -1,0 +1,50 @@
+// Exercises Ch6
+
+6.1 | a) arrays
+    | b) index
+    | c) macro
+    | d) sorting
+    | e) searching
+    | f) two-dimensional
+
+6.2 | a) False. An array can only store one type of variable.
+    | b) False. Array subscripts are only type of int.
+    | c) False. They are initialized with zero
+    | d) True
+    | e) False. Individual elements are passed by value. Should pass the array instead.
+
+6.3 | a) #define SIZE 10
+    | b) double fractions[SIZE] = {0.0};
+    | c) fractions[4];
+    | d) fractions[9] = 1.667;
+    | e) fractions[6] = 3.333;
+    | f) printf("%.2f %.2f\n", fractions[6], fractions[9]); // 3.33 1.67
+    | g) for (int x = 0; x < SIZE; x++) { printf("%.3f ", fractions[x]); }
+    |   // 0 0 0 0 0 0 1.667 0 0 3.333
+
+6.4 | a) int table[SIZE][SIZE];
+    | b) printf("%d", SIZE * SIZE);
+    | c) for (int x = 0; x < SIZE; x++) { 
+    |       for (int y = 0; y < SIZE; y++) {
+    |           table[x][y] = x + y; 
+    |       }
+    |    }
+    | d) for (int x = 0; x < SIZE; x++) { 
+    |       for (int y = 0; y < SIZE; y++) {
+    |           printf("table[%d][%d] = %d\n", x, y, table[x][y]); 
+    |       }
+    |    }
+
+6.5 | a) Error: Semicolon after macro definition.
+    |    Correction: #define SIZE 100
+    | b) Error: Cannot assign to a symbolic constant.
+    |    Correction: #define SIZE 10 
+    | c) Error: Array ends in b[9]. Accessing b[10] is an error. 
+    |    Correction: for (size_t i = 0; i < 10; ++i)
+    | d) Error: Semicolon after #include statement.
+    |    Correction: #include <stdio.h>
+    | e) Error: Wrong syntax for accessing two-dimensional arrays.
+    |    Correction: a[1][1] = 5;
+    | f) Error: Wrong use of a macro. VALUE will be equal to "= 120".
+    |    Correction: #define VALUE 120
+

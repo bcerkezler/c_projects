@@ -1,0 +1,15 @@
+//Exercises Ch 13
+
+13.1 | a) 16
+     | b) O(nlogn)
+
+13.2 | They split their problem to two subarrays recursively. That accounts
+     | for the log part.
+
+13.3 | Insertion sort is easier to implement and understand than merge sort. 
+     | But merge sort is more time efficient (nlogn) than insertion sort (n^2)
+
+13.4 | The sorting part happens while merging. The array splits
+     | until every subarray has 1 element. So, the two subarrays
+     | get sorted and merged but not until every element is splitted
+     | and sorting happens in the merging part.

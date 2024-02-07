@@ -1,0 +1,32 @@
+// Exercises Ch7
+
+7.1 | a) address
+    | b) address, NULL, 0
+    | c) 0
+
+7.2 | a) False. A void pointer cannot be dereferenced.
+    | b) False. A void pointer can be assigned to all types.
+
+7.3 | a) float numbers[SIZE] = {0.0, 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9};
+    | b) float *nPtr;
+    | c) for (int i = 0; i < SIZE; i++) { printf("numbers[%d] = %.f\n", i, numbers[i]); }
+    | d) nPtr = numbers;  nPtr = &numbers[0];
+    | e) for (int i = 0; i < SIZE; i++) { printf("*(nPtr + %d) = %.f\n", i, *(nPtr + i)); }
+    | f) for (int i = 0; i < SIZE; i++) { printf("*(numbers + %d) = %.f\n", i, *(numbers + i)); }
+    | g) for (int i = 0; i < SIZE; i++) { printf("nPtr[%d] = %.f\n", i, nPtr[i]); }
+    | h) numbers[4], *(numbers + 4), nPtr[4], *(nPtr + 4)
+    | i) 1002532, 8.8
+    | j) 1002504, 1.1
+
+7.4 | a) float *fPtr;
+    | b) fPtr = &number1;
+    | c) printf("%f", *fPtr);
+    | d) number2 = *fPtr;
+    | e) printf("%f", number2);
+    | f) printf("%p", &number1);
+    | g) printf("%p", fPtr);
+
+7.5 | a) void exchange(float *x, float *y)
+    | b) void exchange(float *x, float *y);
+    | c) int evaluate(int x, int (*poly)(int))
+    | d) int evaluate(int x, int (*poly)(int));

@@ -45,3 +45,19 @@
      | g) fputs()
      | h) fwrite()
      | i) rewind()
+
+11.10 | a) struct person blank = {"unassigned", "", "0"};
+      |    fwrite(&blank, sizeof(struct person), 100, fPtr);
+      | b) int i = 1;
+      |    while (i++ <= 10) {
+      |        scanf("%s %s %s", person.lastName, person.firstName, person.age);
+      |        fwrite(&person, sizeof(struct person), 1, fPtr);
+      |    }
+      | c) printf("Enter a record number: ");
+      |    scanf("%d", &record);
+      |    fseek(fPtr, (record - 1) * sizeof(struct person), SEEK_SET);
+      |    fwrite(&person, sizeof(struct person), 1, fPtr);
+      | d) printf("Enter a record number: ");
+      |    scanf("%d", &record);
+      |    fseek(fPtr, (record - 1) * sizeof(struct person), SEEK_SET);
+      |    fwrite(&blank, sizeof(struct person), 1, fPtr);

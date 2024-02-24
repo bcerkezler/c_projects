@@ -30,7 +30,7 @@ x   | s)
     | c) Error: %c is used instead of %s. 
     |    Correction: printf("%s\n", "Monday");
     | d) Error: Can't use double quotes like that inside string literals.
-    |    Correction: puts("""A string in quotes""");
+    |    Correction: puts("\"A string in quotes\"");
     | e) Error: No format string in printf.
     |    Correction: printf("%d%d", 12, 20);
     | f) Error: Using %c for printing a string.
@@ -69,3 +69,22 @@ x   | i) printf("%+20..3llf", 3.333333);
     | f) 4.45E+002
     | g) 4.4e+002
     | h) Trying to display a floating-point number with %d.
+
+9.6 | a) Error: Single quotes ('') used for a string literal.
+    |    Correction: printf("%s\n", "Happy Birthday");
+    | b) Error: Single quotes ('') used for a string literal and the conv. spec. is %c.
+    |    Correction: printf("%s\n", "Hello");
+    | c) Error: %c is used instead of %s. 
+    |    Correction: printf("%s\n", "This is a string");
+    | d) Error: Should use \" to print double quotes.
+    |    Correction: printf("\"%s\"", "Bon Voyage");
+    | e) Error: Using %s to print a char.
+    |    Correction: printf("%c\n", day[3]);
+    | f) Error: Using single quotes ('') instead of double quotes ("").
+    |    Correction: puts("Enter your name: "); 
+    | g) Error: No double quotes for the format string.
+    |    Correction: printf("%f", 123.456);
+    | h) Error: Using %s to print a char.
+    |    Correction: printf("%c%c\n", 'O', 'K');
+    | i) Error: No address operator (&) in the scanf's second argument.
+    |    Correction: scanf("%c", &s[7]);

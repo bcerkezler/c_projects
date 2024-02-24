@@ -30,3 +30,42 @@
     | b) void exchange(float *x, float *y);
     | c) int evaluate(int x, int (*poly)(int))
     | d) int evaluate(int x, int (*poly)(int));
+
+7.6 | a) Error: zPtr has not been initialized.
+    |    Correction: zPtr = z;
+    | b) Error: The pointer is not dereferenced.
+    |    Correction: number = *zPtr;
+    | c) Error: zPtr[2] is not a pointer and should not be dereferenced. 
+    |    Correction: number = zPtr[2];
+    | d) Error: Referring to an array element outside the array bounds.
+    |    Correction: for (size_t i = 0; i < 5; ++i)
+    | e) Error: Dereferencing a void pointer.
+    |    Correction: number = *((int *) sPtr);
+    | f) Error: Trying to modify an array name with pointer arithmetic.
+    |    Correction: ++z[0] or ++zPtr
+
+7.7 | a) &
+    | b) *
+    | c) address
+
+7.8 | a) True
+    | b) False. You can't use pointer arithmetic on them.
+
+7.9 | a) int values[SIZE] = {2, 4, 6, 8, 10};  //1002500
+    | b) int *vPtr;
+    | c) for (i = 0; i < SIZE; i++) { printf("values[%d] = %d\n", i, values[i]); }
+    | d) vPtr = values;  vPtr = &values[0];
+    | e) for (i = 0; i < SIZE; i++) { printf("*(vPtr + %d) = %d\n", i, *(vPtr + i)); }
+    | f) for (i = 0; i < SIZE; i++) { printf("*(values + %d) = %d\n", i, *(values + i)); }
+    | g) for (i = 0; i < SIZE; i++) { printf("vPtr[%d] = %d\n", i, vPtr[i]); }
+    | h) values[4], *(values + 4), vPtr[4], *(vPtr + 4)
+    | i) 1002512, 8
+    | j) 1002500, 2
+
+7.10 | a) long *lPtr;
+     | b) lPtr = &value1;
+     | c) printf("%ld", *lPtr);
+     | d) value2 = *lPtr;
+     | e) printf("%ld", value2);
+     | f) printf("%p", &value1);
+     | g) printf("%p", lPtr);

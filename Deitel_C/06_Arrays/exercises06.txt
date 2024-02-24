@@ -48,3 +48,85 @@
     | f) Error: Wrong use of a macro. VALUE will be equal to "= 120".
     |    Correction: #define VALUE 120
 
+6.6 | a) arrays
+    | b) are contiguous
+    | c) index
+    | d) p[0], p[1], p[2], p[3], p[4] 
+    | e) value
+    | f) initializing
+    | g) sorting
+    | h) rows, columns
+    | i) m, n, m*n
+    | j) d[2][4]
+
+6.7 | a) False. Specify the index of the element.
+    | b) True
+    | c) False. Write int p[100];.
+    | d) False. This statement can do it too: int array[15] = {0};.
+    | e) True
+    | f) True
+
+6.8 | a) printf("%c", f[6]);
+    | b) scanf("%f", &b[3]);
+    | c) int g[5] = {8, 8, 8, 8, 8};
+    | d) for (int i = 0; i < 100; i++) {
+    |        total += c[i]; 
+    |    } 
+    | e) for (int i = 0; i < 11; i++) {
+    |        b[i] = a[i]; 
+    |    } 
+    | f) min = w[0];
+    |    max = w[0];
+    |    for (int i = 0; i < 99; i++) {
+    |        if (w[i] < min) { 
+    |            min = t[i][j]; 
+    |        } 
+    |        if (w[i] > max) { 
+    |            max = t[i][j]; 
+    |        } 
+    |    }
+    |    printf("Smallest value is %d\n", min); 
+    |    printf("Largest value is %d\n", max); 
+
+6.9 | a) int t[2][5];
+    | b) 2
+    | c) 5
+    | d) 10
+    | e) t[1][0], t[1][1], t[1][2], t[1][3], t[1][4]
+    | f) t[0][2], t[1][2]
+    | g) t[0][1] = 0;
+    | h) int t[2][5] = {{0}, {0}};
+    | i) for (int i = 0; i < 2; i++) { 
+    |       for (int j = 0; j < 5; j++) {
+    |           t[i][j] = 0; 
+    |       }
+    |    } 
+    | j) for (int i = 0; i < 2; i++) { 
+    |       for (int j = 0; j < 5; j++) {
+    |           scanf("%d", &t[i][j]); 
+    |       }
+    |    } 
+    | k) min = t[0][0];
+    |    for (int i = 0; i < 2; i++) { 
+    |       for (int j = 0; j < 5; j++) {
+    |           if (t[i][j] < min) { 
+    |               min = t[i][j]; 
+    |           } 
+    |       }
+    |    } 
+    |    printf("Smallest value is %d\n", min); 
+    | l) for (int i = 0; i < 5; i++) {
+    |        printf("%d ", t[0][i]); 
+    |    }
+    | m) for (int i = 0; i < 2; i++) {
+    |        total += t[i][3]; 
+    |    }
+    | n)    printf("    %3d%3d%3d%3d%3d\n", 1, 2, 3, 4, 5);
+    |       printf("    %3s%3s%3s%3s%3s\n", "--", "--", "--", "--", "--");
+    |       for (int i = 0; i < 2; i++) {
+    |           printf("  %d|", i+1);
+    |           for (int j = 0; j < 5; j++) {
+    |               printf("%3d", t[i][j]);
+    |           }
+    |           printf("\n\n");
+    |       } 

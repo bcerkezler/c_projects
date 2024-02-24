@@ -5,6 +5,7 @@
         "math.h": "c",
         "algorithm": "c",
         "stdlib.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "cmath": "c"
     }
 }

@@ -92,3 +92,20 @@
      |       unsigned int o : 1;   
      |       unsigned int p : 1;   
      |    }
+
+10.6 | a) customerRecord.lastName[i]
+     | b) customerPtr->lastName[i]
+     | c) customerRecord.firstName[i]
+     | d) customerPtr->firstName[i]
+     | e) customerRecord.customerNumber
+     | f) customerPtr->customerNumber
+     | g) customerRecord.personal.phoneNumber[i]
+     | h) customerPtr->personal.phoneNumber[i]
+     | i) customerRecord.personal.address[i]
+     | j) customerPtr->personal.address[i]
+     | k) customerRecord.personal.city[i]
+     | l) customerPtr->personal.city[i]
+     | m) customerRecord.personal.state[i]
+     | n) customerPtr->personal.state[i]
+     | o) customerRecord.personal.zipCode[i]
+     | p) customerPtr->personal.zipCode[i]

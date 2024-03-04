@@ -38,3 +38,9 @@
     |    Correction: char s[13] = "";
     | d) Error: if statement will execute falsely.
     |    Correction: if (strcmp(string1, string2) == 0)
+
+8.22 | a) true
+     | b) false
+     | c) true
+     | d) true
+     | e) false

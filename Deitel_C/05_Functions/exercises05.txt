@@ -73,5 +73,16 @@
      | b) printf("%d", ((rand() % 5 + 1) * 2) + 1);
      | c) printf("%d", ((rand() % 5 + 1) * 2) * 2 + 2);
 
+5.46 | a) Error: No return type in func. definition.
+     |    Correction: double cube (float number) {}
+     | b) Error: Using srand() instead of rand().
+     |    Correction: int randomNumber = rand();
+     | c) Error: Fraction part is already gone during assignment.
+     |    Correction: Casting wont work, just print the double.
+     | d) Error: double number declared twice.
+     |    Correction: Just delete the statement.
+     | e) Error: Infinite recursion.
+     |    Correction: return n + sum(n-1);
+
 
     
